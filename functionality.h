@@ -3,8 +3,7 @@
 
 #include "Stack.h"
 
-void addSeries(Stack myStack);
-void printStack(Stack myStack);
+Stack createParallelGroup();
 
 
 #endif

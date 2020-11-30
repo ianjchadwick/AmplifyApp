@@ -5,31 +5,19 @@
 using namespace std;
 
 
-// adds a resistor to myStack
-void addSeries(Stack myStack)
+
+Stack createParallelGroup()
 {
-    double val;
+    char ans;
+    Stack myResStack;
 
-    cout << "Enter a resistor value: ";
-    cin >> val;
-
-    R myRes = R(val);
-
-    myStack.push(myRes);
-}
-
-void printStack(Stack myStack)
-{
-
-if (myStack.size == 0)
+    do
     {
-        cout << "The stack is empty!" << endl;
+    myResStack.addResistor();
+    cout << "Would you like to add another resistor? (Y/N) ";
+    cin >> ans;
     }
-else
-    {
-        for(int i=0; i < myStack.getSize(); i++)
-            {
-            myStack.printElem(i);
-            }
-    }
+    while (ans == 'Y');
+
+    return myResStack;
 }

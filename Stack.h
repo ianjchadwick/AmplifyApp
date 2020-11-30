@@ -10,6 +10,9 @@ public:
   bool isEmpty() const;
   R getElem(int) const;
   void printElem(int i) const;
+  void addResistor();
+  void printStack();
+  R equiv();
   void push(R newRes);
   R pop();
   int getSize();
