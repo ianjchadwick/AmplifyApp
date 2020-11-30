@@ -109,6 +109,12 @@ void Stack::addResistor()
     push(myRes);
 }
 
+void Stack::addResistor(R myRes)
+{
+    push(myRes);
+}
+
+
 void Stack::printStack()
 {
 

@@ -11,6 +11,7 @@ public:
   R getElem(int) const;
   void printElem(int i) const;
   void addResistor();
+  void addResistor(R myRes);
   void printStack();
   R equiv();
   void push(R newRes);
