@@ -5,5 +5,4 @@
 
 Stack createParallelGroup();
 
-
 #endif
