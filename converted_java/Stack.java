@@ -118,15 +118,7 @@ public double calcVoltage(R myRes, double current)
 	return voltage;
 }
 
-//calculates the current given a resistance and voltage
-public double calcCurrent(R myRes, double voltage)
-{
-	double current;
-	
-	current = voltage/ myRes.getVal();
-	
-	return current;
-}
+
 
 //prints out the values of each of the resistors in the current stack
 void printStack()
