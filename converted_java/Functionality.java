@@ -1,4 +1,4 @@
-package test_package;
+package amplify.bin;
 
 import java.util.Scanner;
 

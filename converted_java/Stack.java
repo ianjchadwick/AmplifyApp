@@ -1,4 +1,4 @@
-package test_package;
+package amplify.bin;
 
 import java.util.Scanner;
 import java.util.Vector;
@@ -46,18 +46,20 @@ public void printElem(int i)
     System.out.println(this.elements.get(i));
 }
 
-// Pushes newRes onto stack if the size is less than 25.
+// Pushes newRes onto stack
 public void push(R newRes)
 {
     this.elements.add(newRes);
     this.size = this.size + 1;
 }
 
+
 // Returns the size of the stack.
 public int getSize()
     {
     return this.size;
     }
+
 
 //This function is important. You call it on a vector of resistor objects and get back
 //a single resistor object, aka the equivalent resistance.
@@ -86,6 +88,7 @@ public R equiv()
     return newReq;
 }
 
+//allows the user to add a resistor to the stack without arguments
 public void addResistor()
 {
     double val;
@@ -99,12 +102,33 @@ public void addResistor()
     push(myRes);
 }
 
+//addResistor function with arguments
 public void addResistor(R myRes)
 {
     push(myRes);
 }
 
+//calculates the voltage given a resistance and current
+public double calcVoltage(R myRes, double current)
+{
+	double voltage;
+	
+	voltage = current * myRes.getVal();
+	
+	return voltage;
+}
 
+//calculates the current given a resistance and voltage
+public double calcCurrent(R myRes, double voltage)
+{
+	double current;
+	
+	current = voltage/ myRes.getVal();
+	
+	return current;
+}
+
+//prints out the values of each of the resistors in the current stack
 void printStack()
 {
 

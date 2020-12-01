@@ -1,4 +1,4 @@
-package test_package;
+package amplify.bin;
 
 public class R {
 
@@ -12,7 +12,7 @@ public class R {
 	  value = 0;
 	}
 
-	// Construtor
+	// Constructor
 	R(double val)
 	{
 	  value = val;
