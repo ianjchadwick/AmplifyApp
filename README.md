@@ -1,5 +1,5 @@
 # AmplifyApp
-An app for Andriod that performs simple circuit analysis.
+An app for Android that performs simple circuit analysis.
 
 
 # Usage
